@@ -24,7 +24,7 @@ def read_graph_network_from_xls(filepath: str):
     def pop_multiple(dict, keys):
         return (dict.pop(key) for key in keys)
 
-    nodes = pd.read_excel(filepath, sheet_name="nodes")
+    nodes = pd.read_excel(filepath, sheet_name="nodes", engine="openpyxl")
     nodes = nodes.to_dict(orient="records")
 
     for node in nodes:
@@ -35,7 +35,7 @@ def read_graph_network_from_xls(filepath: str):
     nodes = set(Node(**node) for node in nodes)
 
     # Edges
-    edges_df = pd.read_excel(filepath, sheet_name="edges")
+    edges_df = pd.read_excel(filepath, sheet_name="edges", engine="openpyxl")
     edges_dict = edges_df.to_dict(orient="records")
     for edge in edges_dict:
         node_ids = set(pop_multiple(edge, ("node0", "node1")))
