@@ -1,8 +1,18 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# ----------------------------------------------------------------------------
+# Created By  : Matthew Davidson
+# Created Date: 2023-01-23
+# version ='1.0'
+# ---------------------------------------------------------------------------
+"""A simple edge class, which can be used for deriving new edge classes that
+actually do something useful"""
+# ---------------------------------------------------------------------------
+
 from __future__ import annotations
+from typing import TYPE_CHECKING
 
 from graphnet.id_generator import IDGenerator
-
-from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
     from node import Node

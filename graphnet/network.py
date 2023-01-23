@@ -1,4 +1,16 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+# ----------------------------------------------------------------------------
+# Created By  : Matthew Davidson
+# Created Date: 2023-01-23
+# version ='1.0'
+# ---------------------------------------------------------------------------
+"""A simple graph network, comprising of nodes connected by edges"""
+# ---------------------------------------------------------------------------
+
 from typing import Container
+
 from graphnet.node import Node
 from graphnet.edge import Edge
 

@@ -2,7 +2,7 @@ def test_build_graph_direct():
 
     from graphnet.node import Node
     from graphnet.edge import Edge
-    from graphnet.graph_network import GraphNetwork
+    from graphnet.network import GraphNetwork
 
     # Create nodes
     node0 = Node()
@@ -17,3 +17,4 @@ def test_build_graph_direct():
     nodes = [node0, node1, node2]
 
     network = GraphNetwork(nodes=nodes)
+    print(network.nodes_sorted)

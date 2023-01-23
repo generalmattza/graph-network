@@ -1,8 +1,19 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# ----------------------------------------------------------------------------
+# Created By  : Matthew Davidson
+# Created Date: 2023-01-23
+# version ='1.0'
+# ---------------------------------------------------------------------------
+"""A simple node class, which can be used for deriving new node classes that
+actually do something useful"""
+# ---------------------------------------------------------------------------
+
 from __future__ import annotations
-from abc import ABC, abstractmethod
 from dataclasses import dataclass
-from graphnet.id_generator import IDGenerator
 from typing import TYPE_CHECKING, Container
+
+from graphnet.id_generator import IDGenerator
 
 if TYPE_CHECKING:
     from graphnet.edge import Edge
@@ -13,7 +24,7 @@ class NodePlot:
     xy: tuple
 
 
-class Node(ABC):
+class Node:
     _ids: IDGenerator = IDGenerator()
 
     def __init__(
