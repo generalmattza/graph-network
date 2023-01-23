@@ -37,7 +37,7 @@ jobs:
         
     - name: Download test excel template
       run: |
-        wget "https://github.com/generalmattza/graph-network/blob/main/tests/example_graph_network_input.xlsx" -O "tests\example_graph_network_input.xlsx"
+        wget "https://github.com/generalmattza/graph-network/blob/main/tests/example_graph_network_input.xlsx" -O "tests/example_graph_network_input.xlsx"
     - name: Test with pytest
       run: |
         pytest
