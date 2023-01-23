@@ -1,7 +1,7 @@
 def main():
-    from src.edge import Edge
-    from src.node import Node
-    from src.network import GraphNetwork
+    from graphnet.edge import Edge
+    from graphnet.node import Node
+    from graphnet.network import GraphNetwork
 
     # create nodes
     node0 = Node()
@@ -15,6 +15,7 @@ def main():
 
     # create graph network
     network = GraphNetwork(nodes=[node0, node1])
+    print(network.nodes_sorted)
 
 
 if __name__ == "__main__":

@@ -1,8 +1,8 @@
 def test_build_graph_direct():
 
-    from src.node import Node
-    from src.edge import Edge
-    from src.network import GraphNetwork
+    from graphnet.node import Node
+    from graphnet.edge import Edge
+    from graphnet.network import GraphNetwork
 
     # Create nodes
     node0 = Node()

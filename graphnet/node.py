@@ -13,10 +13,10 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import TYPE_CHECKING, Container
 
-from src.id_generator import IDGenerator
+from graphnet.id_generator import IDGenerator
 
 if TYPE_CHECKING:
-    from src.edge import Edge
+    from graphnet.edge import Edge
 
 
 @dataclass
