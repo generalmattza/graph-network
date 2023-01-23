@@ -1,4 +1,5 @@
 et-xmlfile==1.1.0
+graphnet @ git+https://github.com/generalmattza/graph-network.git
 numpy==1.24.1
 openpyxl==3.0.10
 pandas==1.5.3
