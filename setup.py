@@ -7,10 +7,9 @@ setup(
     url="https://github.com/generalmattza/graph-network.git",
     author="Matthew Davidson",
     author_email="matthew.davidson@generalfusion.com",
-    license="",
-    packages=["graphnet"],
+    license="MIT",
+    packages=["graphnet", "tests"],
     install_requires=[
-        "graphnet",
         "pandas",
         "openpyxl",
         "pytest",
