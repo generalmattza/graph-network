@@ -13,6 +13,7 @@ setup(
         "graphnet",
         "pandas",
         "openpyxl",
+        "pytest",
     ],
     classifiers=[
         "Development Status :: 1 - Planning",
