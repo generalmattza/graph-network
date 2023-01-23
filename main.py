@@ -1,7 +1,7 @@
 def main():
-    from graphnet.edge import Edge
-    from graphnet.node import Node
-    from graphnet.network import GraphNetwork
+    from src.edge import Edge
+    from src.node import Node
+    from src.network import GraphNetwork
 
     # create nodes
     node0 = Node()

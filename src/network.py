@@ -11,8 +11,8 @@
 
 from typing import Container
 
-from graphnet.node import Node
-from graphnet.edge import Edge
+from src.node import Node
+from src.edge import Edge
 
 
 def read_graph_network_from_xls(filepath: str):

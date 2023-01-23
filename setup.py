@@ -8,7 +8,7 @@ setup(
     author="Matthew Davidson",
     author_email="matthew.davidson@generalfusion.com",
     license="MIT",
-    packages=["graphnet", "tests"],
+    packages=["src", "tests"],
     install_requires=[
         "pandas",
         "openpyxl",

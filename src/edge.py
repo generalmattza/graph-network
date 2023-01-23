@@ -12,7 +12,7 @@ actually do something useful"""
 from __future__ import annotations
 from typing import TYPE_CHECKING
 
-from graphnet.id_generator import IDGenerator
+from src.id_generator import IDGenerator
 
 if TYPE_CHECKING:
     from node import Node
