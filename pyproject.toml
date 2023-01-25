@@ -21,7 +21,6 @@ dependencies = [
     "pandas==1.5.3",
     "openpyxl==3.0.10",
 ]
-dynamic = ["version"]
 
 [project.optional-dependencies]
 test = [
